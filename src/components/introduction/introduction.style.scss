@@ -25,7 +25,11 @@ section.introduction{
 
 
 }
-
+@media (min-width: 850px){
+  .introduction{
+    padding: 8rem 5rem 0;
+  }
+}
 @media (max-width: 850px){
   .introduction{
     flex-direction: column;
