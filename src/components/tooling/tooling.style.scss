@@ -1,0 +1,63 @@
+@import "src/global-styles/variables";
+
+section.tooling{
+margin-top: 100px;
+.cent{
+  display: flex;
+  justify-content: center;
+}
+
+  .card-tools{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    background-color:rgba(18, 20, 29, 01) ;
+    height: 60px;
+    width: 165px;
+    flex: 1 23%;
+    margin: 1%;
+    svg{
+  font-size: 50px;
+      color: $coral;
+    }
+    p{
+      color: white;
+      font-family: "Space Mono";
+      font-weight: 700;
+    }
+  }
+
+  .tooling-container{
+
+    display: flex;
+
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: $coral;
+  }
+
+}
+
+@media (min-width: 851px) {
+  .tooling-container{
+    width: 800px;
+    margin: auto;
+    margin-top: 70px;
+  }
+}@media (max-width: 850px) {
+  .tooling-container{
+    margin: 0 3%;
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .tooling-container{
+    margin: 0 3%;
+    width: auto;
+  }
+  p{
+    display: none;
+  }
+}

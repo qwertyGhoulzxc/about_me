@@ -1,0 +1,66 @@
+@import "src/global-styles/variables";
+
+p.greet{
+display:flex;
+background:rgba(238, 61, 72, 0.18);
+border-radius: 12px;
+color: $coral;
+font-family: 'Space Mono', sans-serif;
+font-weight: 900;
+letter-spacing: .05em;
+margin: 0;
+padding: 0.5rem 1rem;
+
+.typing{
+  overflow: hidden;
+
+  white-space: nowrap;
+  animation:
+          typing 4s steps(104, end) forwards;
+  animation-iteration-count: infinite;
+
+  width: 0;
+}
+
+.hand{
+  color:white;
+
+  font-size:24px;
+  animation:greet 2s forwards;
+  animation-iteration-count: infinite;
+  margin-right:10px;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes greet{
+  0%{
+    transform:translate(-10%);
+
+  }
+  50% {
+    transform:translate(10%);
+  }
+  100%{
+    transform:translate(-10%);
+  }
+}
+
+
+}
+
+@media (min-width: 600px) {
+  p.greet {
+    width: 400px;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  p.greet {
+    width: 90%;
+    font-size: 1rem;
+  }
+}

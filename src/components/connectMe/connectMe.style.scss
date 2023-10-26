@@ -1,0 +1,65 @@
+@import "src/global-styles/variables";
+
+section.ConnectMe{
+  margin-top: 90px;
+
+  .cent{
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    background-color:rgba(18, 20, 29, 01) ;
+    height: 60px;
+    width: 165px;
+    flex: 1 23%;
+    margin: 1%;
+    &:hover{
+      cursor: pointer;
+    }
+    svg{
+      font-size: 50px;
+      color: $coral;
+    }
+    a{
+      color: white;
+      font-family: "Space Mono";
+      font-weight: 700;
+    }
+  }
+
+  .connectMe-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: $coral;
+  }
+
+
+}
+
+
+@media (min-width: 851px) {
+  .connectMe-container{
+
+    margin-top: 70px;
+    margin: auto;
+    width: 800px;
+  }
+}@media (max-width: 850px) {
+  .connectMe-container{
+    margin: 0 3%;
+    width: auto;
+  }
+
+}
+@media(max-width: 600px){
+  a{
+    display: none;
+  }
+}

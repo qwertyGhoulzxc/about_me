@@ -1,0 +1,47 @@
+@import "src/global-styles/variables";
+.AboutMeContainer{
+  margin-top:10px;
+  h2{
+    font-family: 'Space Mono', sans-serif;
+    color:white;
+
+  }
+  span{
+    color:$coral;
+  }
+  p.abme{
+    color:white;
+    font-family: 'Space Mono', sans-serif;
+    width:90%;
+    background:rgba(238, 61, 72, 0.18);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-weight: 900;
+  }
+}
+@media (min-width: 851px) {
+  h2{font-size:36px;}
+  .abme{font-size:24px;}
+
+
+}
+
+@media (max-width: 850px){
+  h2{
+    font-size: 24px;
+  }
+  .abme{
+    font-size:22px;
+  }
+
+}
+
+@media (max-width: 600px){
+  h2{
+    font-size: 20px;
+  }
+  .abme{
+    font-size:18px;
+  }
+
+}
