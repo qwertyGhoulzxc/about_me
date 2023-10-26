@@ -13,7 +13,7 @@ const Tooling: FC = () => {
 
         <div className="tooling-container">
         {Icons.map((i,ii)=>{
-        return <div key={ii} className={'card-tools'}>{i.component}<p className={'desc'}>{i.desc}</p></div>
+        return <div key={ii} className={'card-tools'}>{i.component}<p  className={'desc'}>{i.desc}</p></div>
         })
         }
         </div>

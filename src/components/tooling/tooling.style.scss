@@ -21,7 +21,7 @@ margin-top: 100px;
   font-size: 50px;
       color: $coral;
     }
-    p{
+    p.desc{
       color: white;
       font-family: "Space Mono";
       font-weight: 700;
@@ -57,7 +57,7 @@ margin-top: 100px;
     margin: 40px 3% 0 3%;
     width: auto;
   }
-  p{
+  p.desc{
     display: none;
   }
 }
